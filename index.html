@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiešsaistes kurss</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Tiešsaistes programmēšanas kurss</h1>
+
+    <p>Izvēlies kursa līmeni un dalībnieku skaitu, lai aprēķinātu kopējo cenu.</p>
+
+    <div class="box">
+
+        <label for="level">Kursa līmenis:</label>
+        <select id="level">
+            <option value="">-- Izvēlies līmeni --</option>
+            <option value="basic">Pamata (50€)</option>
+            <option value="intermediate">Vidējais (80€)</option>
+            <option value="advanced">Padziļinātais (120€)</option>
+        </select>
+
+        <label for="quantity">Dalībnieku skaits:</label>
+        <input type="number" id="quantity" min="1" placeholder="Ievadi skaitu">
+
+        <button id="calculateBtn">Aprēķināt cenu</button>
+
+        <p id="result"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
